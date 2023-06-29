@@ -136,6 +136,7 @@
   padding-bottom: 30px;
   float: left;
   font-size: 14px;
+  font-family: "Roboto-Medium", sans-serif;
 }
 .vieclam_container {
   width: 1170px;
@@ -172,4 +173,54 @@
 .list :before {
   content: url(../../public/Group.png);
   margin-right: 9px;
+  margin-bottom: 50px;
+}
+
+.dcma_icon {
+}
+.btc_icon {
+}
+.non_display {
+  list-style-type: none;
+}
+.non_display1 :before {
+  content: url(../../public/Building.png);
+  margin-right: 9px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+.flex {
+  display: flex;
+  align-self: flex-start;
+}
+.footer_right {
+  width: 57%;
+
+  float: left;
+  margin-top: 38px;
+  background: url(../../public/Phone.png) no-repeat right 0px;
+  padding-bottom: 0px;
+  padding-top: 0;
+  background-size: 36% 96%;
+}
+.footer_right_left {
+  width: 66%;
+  float: left;
+}
+.footer_right_top {
+  width: 100%;
+  text-align: center;
+}
+.footer_right_top_p {
+  font-size: 17px;
+  line-height: 25px;
+  text-align: right;
+  color: #fff;
+  margin-right: 5px;
+}
+.qr_cv {
+  width: 33.3%;
+  float: right;
+  margin-top: 15px;
+  text-align: center;
 }

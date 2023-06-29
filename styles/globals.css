@@ -1,26 +1,66 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+:root {
+  --text-color: #474747;
+  --theme-color: #4c5bd4;
+  --white-color: #fff;
+  --heavy-blue: #232f87;
+  --footer-bg-color: #043379;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+}
+
+body {
+}
+
+a,
+p,
+span {
+  font-size: 16px;
+}
+
+span {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+ul,
+li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+hr {
+  border-bottom: 1px dotted #000;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+.ant-modal .ant-modal-content {
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.ant-card-bordered {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,40 @@
+.main {
+  background-color: var(--theme-color);
+
+  padding: 15px 24px;
+  /* display */
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftHeader {
+  display: flex;
+  align-items: center;
+}
+
+.singleLink {
+  margin-left: 28px;
+}
+
+/* right header */
+.rightHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatSection {
+  display: flex;
+  align-items: center;
+
+  .text {
+    color: var(--white-color);
+    margin-left: 10px;
+  }
+
+  .button {
+    background-color: var(--heavy-blue);
+  }
+}
+
+/* banner */

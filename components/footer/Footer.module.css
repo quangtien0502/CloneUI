@@ -1,0 +1,173 @@
+.main {
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  /* height: 100%; */
+  padding: 30px 360px;
+
+  /* padding: 30px 0px; */
+  line-height: 32px;
+  background-color: var(--footer-bg-color);
+}
+
+.listKeywords {
+  /* display: flex; */
+  margin-bottom: 32px;
+}
+
+.bottomTabSon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleSpan {
+  margin-right: 16px;
+  color: var(--color-white);
+}
+
+.headerText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.menu {
+  margin-top: 32px;
+}
+
+.fstElm {
+  height: 40%;
+}
+
+.sndElem {
+  margin-top: 45px;
+}
+
+.thirdSection {
+  margin-top: 32px;
+}
+
+.listCert {
+  display: flex;
+  align-items: center;
+}
+
+.listQr {
+  display: flex;
+}
+
+.singleQr {
+  margin-right: 26px;
+}
+
+.qrText {
+  text-align: center;
+  font-size: 12px;
+}
+
+.compNameText {
+  /* margin-bottom: 20px; */
+  font-weight: 600;
+}
+
+.qrHeaderText {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.compInfoText {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.listBtns {
+  display: flex;
+}
+
+.btnDownload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.18);
+  border: none;
+  border-radius: 8px;
+}
+
+.downloadSection {
+  display: none;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1366px) {
+  .main {
+    padding: 30px 83px;
+  }
+}
+
+/* 1068px */
+@media screen and (max-width: 1236px) {
+  .qrSection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 30px 24px;
+  }
+
+  .qrSection {
+    display: none;
+  }
+
+  .downloadSection {
+    display: block;
+  }
+}
+.footer {
+  width: 100%;
+  background: #043379;
+  height: auto;
+  padding-bottom: 30px;
+  float: left;
+  font-size: 14px;
+}
+.vieclam_container {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+}
+.footer_left {
+  width: 42%;
+  float: left;
+  color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 20px;
+  padding-right: 1%;
+  --text-color: #fff;
+}
+.foot_hid {
+  padding: 0;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+.foot_show {
+  width: 45%;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 13px;
+}
+.listHeader {
+  list-style-type: none;
+}
+.list :before {
+  content: url(../../public/Group.png);
+  margin-right: 9px;
+}

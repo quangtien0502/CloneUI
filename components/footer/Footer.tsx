@@ -37,8 +37,8 @@ export default function Footer(props: FooterProp) {
     <div className={styles.footer}>
       <div className={styles.vieclam_container}>
         <div className={styles.footer_left}>
-            <div className={styles.foot_hid}>
-              <ul className={styles.listHeader}>
+            <ul className={styles.foot_hid}>
+              
               <li className={styles.list}>
                   <span>Đơn vị chủ quản</span>
                   <br />
@@ -65,10 +65,10 @@ export default function Footer(props: FooterProp) {
                 timviec365.vn@gmail.com
 
               </li>
-              </ul>
-            </div>
-            <div className={styles.foot_show}>
-              <ul className={styles.listHeader}> 
+              
+            </ul>
+            <ul className={styles.foot_show}>
+              
               <li className={styles.list}>           
                   <a >Giới thiệu chung</a>
                 </li>
@@ -81,24 +81,22 @@ export default function Footer(props: FooterProp) {
                 <li className={styles.list}>
                   <a>Sơ đồ website</a>
                 </li>
-              </ul>
-            </div>
-            <div className={styles.foot_show}>
-              <ul className={styles.listHeader}>
+              
+            </ul>
+            <ul className={styles.foot_show}>
+              
               <li className={styles.list}>
                 <a>Quy định bảo mật</a>
               </li>
               <li className={styles.list}>
                 <a>Quy định giải quyết tranh chấp</a>
               </li>
-              </ul>
-              <ul className={styles.listHeader} style={{display:"flex"}}>
-              <li className={styles.list}>
-                <img src="DaDangKy.png"></img> 
-              </li>
-              </ul>
-              <li></li>
-            </div>
+              
+              
+              
+              
+              
+            </ul>
         </div>
         <div className={styles.footer_right}>
 

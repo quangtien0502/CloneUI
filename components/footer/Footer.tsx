@@ -2,8 +2,8 @@ import React from "react"
 import styles from "./Footer.module.css"
 import Image from "next/image"
 import { COLOR_WHITE } from "../constants/style-constants"
-import { LIST_KEYWORDS, LIST_MENU } from "./constants"
-import { Col, Row } from "antd"
+import { LIST_KEYWORDS, LIST_MENU, LIST_MXH } from "./constants"
+import { Col, ListProps, Row } from "antd"
 import { url } from "inspector"
 export interface FooterProp {}
 
@@ -33,6 +33,19 @@ export default function Footer(props: FooterProp) {
       />
     </button>
   )
+
+  interface ListProps {
+    name: string;
+    message: string;
+  }
+  
+  const List: React.FC<ListProps> = ({name,message}) => {
+    return (
+      <li className={styles[name]}>
+          {message}
+      </li>
+    );
+  };
 
   return (
     <div className={styles.footer}>
@@ -176,17 +189,64 @@ export default function Footer(props: FooterProp) {
                   style={{ marginLeft: "10px" }}
                 />
               </div>
-              <div className={styles.qr_cv}></div>
-              <div className={styles.footer_right_bot}></div>
+              
+              <div className={styles.footer_right_bot}>
+                <div className={styles.bot_btn_tv}>
+                    <div>
+                    <Image
+                  
+                  alt="/"
+                  src={"/Backgroun_button_white.png"}
+                  width={30}
+                  height={30}
+                  style={{ marginLeft: "10px",objectFit:"cover" }}
+                />
+                    </div>
+                    <div>
+                    <a className={styles.bot_btn_tv_a}> Tải app Timviec365 UV</a>
+                    </div>
+                </div>
+                <div className={styles.bot_btn_tv}>
+                    <a className={styles.bot_btn_tv_a}> Tải app Timviec365 UV</a>
+                </div>
+              </div>
               <div className={styles.footer_right_bot} style={{textAlign:"center"}}></div>
            </div>
 
         </div>
         <div className={styles.foot_bot}>
-
+            <div className={styles.bot_from}>
+                <p className={styles.bot_from_p} style={{marginRight:"5px"}}>Top ngành nghề: </p>
+                <ul className={styles.bot_from_ul}>
+                
+                  {LIST_KEYWORDS.map((item,index) => 
+                      <li key={index} className={styles.bot_from_li}>
+                        <a>{item}</a>
+                      </li>
+                  )}
+              </ul>
+            </div>
+            
         </div>
         <div className={styles.link_mxh}>
-
+            <p className={styles.link_mxh_p}>Hãy theo dõi chúng tôi qua mạng xã hội</p>
+            {LIST_MXH.map((item,index)=>
+              <div className={styles.mxh}>
+              <a style={{textDecoration:"unset"}}>
+              <Image
+                  key={index}
+                  alt="/"
+                  src={item}
+                  width={30}
+                  height={30}
+                  style={{ marginLeft: "10px",objectFit:"cover" }}
+                />
+              </a>
+            </div>
+            )
+                            
+            }
+            
         </div>
 
       </div>
